@@ -1,0 +1,4 @@
+Django==1.9.5
+requests==2.18.4
+psycopg2==2.7.5
+pytest==3.7.4
