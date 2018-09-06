@@ -28,5 +28,6 @@ python manage.py runserver
 
 #### Запуск тестов
 ```
-sudo ./tests/tests.sh
+chmod u+x tests/tests.sh
+cd tests && ./tests.sh
 ```
