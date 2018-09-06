@@ -78,7 +78,6 @@ def add_comment(request):
     return JsonResponse({'result': 'ok'})
 
 
-@csrf_exempt
 def get_all_tasks(request):
     if request.method != 'GET':
         return JsonResponse({'error': 'Request is not GET'}, status=400)
@@ -137,7 +136,6 @@ def get_all_tasks(request):
     return JsonResponse({'result': result})
 
 
-@csrf_exempt
 def get_task(_, task_id):
     form = OneTaskForm({'task_id': task_id})
     if not form.is_valid():
